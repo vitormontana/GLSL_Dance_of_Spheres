@@ -12,7 +12,7 @@ uniform float u_time;
 uniform vec2 u_mouse;
 uniform vec2 u_resolution;
 
-vec2 axis = vec2(0.1, 0.9); // Axis X and Y where particles move
+vec2 axis = vec2(-0.390,-0.630); // Axis X and Y where particles move
 
 // Sphere settings
 const float sphere_number = 50.0;
