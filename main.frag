@@ -15,7 +15,7 @@ uniform vec2 u_resolution;
 vec2 axis = vec2(0.1, 0.9); // Axis X and Y where particles move
 
 // Sphere settings
-const float sphere_number = 50.0; // Number of spheres
+const float sphere_number = 50.0;
 vec3 sphere_color = vec3(0.1, 0.9, 0.4);
 float glow = 0.01; // The glow of each sphere sums to general glow 
 float glowsum = -0.1; // How much each sphere glow adds to general glow
@@ -27,8 +27,6 @@ float limit_x = 0.99; // Length limit, how long spheres can go
 float limit_y = 0.99; // Height limit, how far spheres can go com y axis
 
 void main(void) {
-
-    axis = vec2(-0.390,-0.630);
 	
 	float col = -0.3;
 	vec2 centr = 2.0 * (gl_FragCoord.xy * 2.0 - u_resolution) /
